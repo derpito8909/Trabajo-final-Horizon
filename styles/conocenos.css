@@ -95,113 +95,59 @@ header {
     color: var(--colorTexto);
 }
 
-/* BANNER */
-.contenedor-banner {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.banner {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.banner h1 {
-    color: var(--colorTexto);
-    text-shadow: 1px 1px 6px black;
-    font-family: var(--textoTitulo);
-    font-size: 50px;
-}
-
-.banner h3 {
-    color: var(--colorContraste);
-    font-size: 20px;
-}
-
-/* IMAGEN BANNER */
-.contenedor-banner img {
-    max-width: 680px;
-    height: auto;
-    filter: drop-shadow(1px 1px 6px black);
-}
-
 /* MAIN */
 main {
     border: solid 5px purple;
     width: 100%;
 }
 
-/* DESTINOS FRECUENTES */
-.destinos-frecuentes {
+.informacion{
     width: 100%;
+
     display: flex;
+    justify-content: space-evenly;
+}
+
+.quienes-somos{
+    display: flex;
+
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: center;
-}
 
-.destinos-frecuentes h2 {
-    margin-top: 40px;
-    font-family: var(--textoTitulo);
-    font-size: 35px;
-    font-weight: 500;
-    text-shadow: 1px 1px 6px black;
-}
-
-/* CARD */
-.contenedor-cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 60px;
-}
-
-.card {
-    width: 320px;
-    background-color: var(--colorContraste);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 1px 1px 6px black;
-    margin: 30px;
-}
-
-.card a {
-    text-decoration: none;
-    color: black;
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-}
-
-.card h3 {
-    margin: 25px;
     text-align: center;
 }
 
-/* CATEGORÍAS */
-.categorias {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 40px;
+.quienes-somos h2{
+    color: var(--colorTexto);
+    font-weight: bold;
+    font-size: 50px;
+    font-family: var(--textoTitulo);
+    text-shadow: 1px 1px 6px black;
+
+    margin-bottom: 50px;
 }
 
-.categorias h2 {
-    margin-top: 85px;
-    font-family: var(--textoTitulo);
-    font-size: 35px;
-    font-weight: 500;
+.quienes-somos p{
+    color: var(--colorContraste);
+    font-size: 20px;
+    font-family: var(--textoContenido);
+}
+
+.informacion img{
+    width: 720px;
+    height: 450px;
+    margin: 80px;
+}
+
+.viajemos-juntos{
+    color: var(--colorTexto);
+    font-weight: bold;
+    font-size: 50px;
     text-shadow: 1px 1px 6px black;
+    text-align: center;
+
+    margin: 70px;
 }
 
 /* FOOTER */
