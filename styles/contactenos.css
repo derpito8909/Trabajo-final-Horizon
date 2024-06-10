@@ -1,0 +1,24 @@
+:root {
+  /* PALETA DE COLORES */
+  --colorTexto: #f0f3ff;
+  --colorContraste: #027368;
+  --colorFondo: #f2e0c9;
+
+  /* TIPOGRAFÍA */
+  --textoTitulo: "Poppins", sans-serif;
+  --textoContenido: "Montserrat", sans-serif;
+}
+/* boton */
+.boton {
+  background-color: var(--colorContraste);
+  border-radius: 5px;
+  color: var(--colorTexto);
+  width: 100px;
+}
+.contact {
+  width: 50%;
+  margin: 30px auto;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: var(--textoContenido);
+}
