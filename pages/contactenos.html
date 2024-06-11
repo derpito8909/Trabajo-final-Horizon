@@ -36,7 +36,7 @@
         <div class="contenedor-menu">
           <ul class="menu-lista">
             <li><a href="../index.html">Inicio</a></li>
-            <li><a href="#">Conócenos</a></li>
+            <li><a href="./conocenos.html">Conócenos</a></li>
             <li class="span-contactenos"><a href="./contactenos.html">Contáctenos</a></li>
           </ul>
           <div class="contenedor-log-in">
@@ -53,26 +53,47 @@
       <section class="contact">
         <h2 class="text-center">contáctenos</h2>
         <p class="text-wrap">si tienes alguna pregunta, dejanos lo saber y deja tu correo electronico y te responderemos lo mas rapido posible</p>
-        <form class="row g-3" novalidate>
+        <!-- formulario de contacto -->
+        <form class="row g-3 needs-validation" novalidate>
           <div class="mb-3">
             <label for="FormEmail" class="form-label">Email</label>
-            <input type="email" class="form-control border-black" id="exampleFormControlInput1" placeholder="name@example.com" />
+            <input type="email" class="form-control border-black" id="email" required placeholder="name@example.com" />
+            <div class="invalid-feedback">Digite un correo electronico</div>
           </div>
           <div class="mb-3">
-            <label for="form-message" class="form-label"></label>
-            <textarea class="form-control border-black" id="form-message" rows="3"></textarea>
+            <label for="form-message" class="form-label">Mensaje</label>
+            <textarea class="form-control border-black" id="message" rows="3" required></textarea>
+            <div class="invalid-feedback">Digite un mensaje</div>
           </div>
           <div class="col-12">
-            <button class="btn-sm boton float-end" type="submit">Enviar</button>
+            <button class="btn-sm boton float-end" id="btn-Message-On" type="submit">Enviar</button>
+            <button class="btn-sm boton float-end d-none" id="btn-Message-Off" type="submit" disabled="">
+              <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+              <span role="status">Cargando...</span>
+            </button>
           </div>
         </form>
+        <!-- modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">Mensaje enviado correctamente</div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <!--------------------------------- FOOTER --------------------------------->
     <footer>
       <div class="contactenos">
         <a href="./contactenos.html"><h3>Contáctenos</h3></a>
-        <a href="#"><h3>Sobre Nosotros</h3></a>
+        <a href="./conocenos.html"><h3>Sobre Nosotros</h3></a>
       </div>
       <ul class="redes-sociales">
         <li>
@@ -95,6 +116,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"></script>
     <!-- SCRIPT -->
-    <script src="./scripts/index.js"></script>
+    <script src="../scripts/contactenos.js"></script>
   </body>
 </html>
