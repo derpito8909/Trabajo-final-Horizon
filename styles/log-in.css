@@ -28,6 +28,7 @@ body {
     font-family: var(--textoContenido);
 }
 
+/* MAIN */
 main{
     width: 100%;
     height: 80%;
@@ -35,7 +36,7 @@ main{
     place-content: center;
 }
 
-/* Formulario */
+/* FORMULARIO LOG IN */
 .login-container {
     width: 650px;
     height: 550px;
@@ -58,23 +59,26 @@ main{
 .iniciar-sesion h2 {
     font-family: var(--textoTitulo);
     font-weight: bold;
-    font-size: 40px;
+    font-size: 50px;
     color: var(--colorTexto);
 }
 
 .form-group {
     margin-bottom: 15px;
 }
+
 .form-group label {
     display: block;
     margin-bottom: 5px;
 }
+
 .form-group input {
     width: 100%;
     padding: 10px;
     border: 1px solid gray;
     border-radius: 4px;
 }
+
 .form-group input[type="checkbox"] {
     width: auto;
 }
@@ -103,11 +107,13 @@ main{
     text-align: center;
     margin-top: 15px;
 }
+
 .extra-links a {
     color: black;
     text-decoration: none;
     margin: 0 10px;
 }
+
 .extra-links a:hover {
     text-decoration: underline;
 }

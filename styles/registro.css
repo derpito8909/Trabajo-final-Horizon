@@ -35,7 +35,7 @@ main{
     place-content: center;
 }
 
-/* Formulario */
+/* FORMULARIO */
 
 .container {
     background-color: #fff;
@@ -45,7 +45,7 @@ main{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 650px;
     height: 550px;
-    box-sizing: border-box; /* Ensure padding is included in the height and width */
+    box-sizing: border-box;
 }
 
 .titulo-registro{
@@ -59,7 +59,7 @@ main{
 .titulo-registro h2 {
     font-family: var(--textoTitulo);
     font-weight: bold;
-    font-size: 50px;
+    font-size: 40px;
     color: var(--colorTexto);
 }
 
