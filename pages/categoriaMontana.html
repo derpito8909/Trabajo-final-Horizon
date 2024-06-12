@@ -11,9 +11,6 @@
     <!-- FAVICON -->
     <link rel="shortcut icon" href="../assets/logo/logo.png" type="image/x-icon" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="../styles/contactenos.css" />
-
     <!-- BOOTSTRAP ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
@@ -24,7 +21,10 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous" />
 
-    <title>Contactenos</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/categorias.css" />
+
+    <title>Montañas</title>
   </head>
   <body>
     <!--------------------------------- HEADER --------------------------------->
@@ -49,39 +49,47 @@
     </header>
     <!--------------------------------- MAIN --------------------------------->
     <main>
-      <section class="contact">
-        <h2 class="text-center">contáctenos</h2>
-        <p class="text-wrap">si tienes alguna pregunta, dejanos lo saber y deja tu correo electronico y te responderemos lo mas rapido posible</p>
-        <!-- formulario de contacto -->
-        <form class="row g-3 needs-validation" novalidate>
-          <div class="mb-3">
-            <label for="FormEmail" class="form-label">Email</label>
-            <input type="email" class="form-control border-black" id="email" required placeholder="name@example.com" />
-            <div class="invalid-feedback">Digite un correo electronico</div>
-          </div>
-          <div class="mb-3">
-            <label for="form-message" class="form-label">Mensaje</label>
-            <textarea class="form-control border-black" id="message" rows="3" required></textarea>
-            <div class="invalid-feedback">Digite un mensaje</div>
-          </div>
-          <div class="col-12">
-            <button class="btn-sm boton float-end" id="btn-Message-On" type="submit">Enviar</button>
-            <button class="btn-sm boton float-end d-none" id="btn-Message-Off" type="submit" disabled="">
-              <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
-              <span role="status">Cargando...</span>
-            </button>
-          </div>
-        </form>
-        <!-- modal -->
-        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <section class="seccion-categorias">
+        <div class="row mx-5">
+          <h2>Montañas</h2>
+          <div class="col-12 col-lg-4">
+            <div class="card item-color">
+              <div class="card-body">
+                <h2 class="text3-i">Parque arqueologico San agustin</h2>
+                <h4 class="text2-k2">Huila</h4>
+                <img class="img-fluid" src="../assets/categorias/Parque-sanAgustin.jpg" alt="Parque-sanAgustin" />
+                <p class="text2-k">
+                  El Parque Arqueológico de San Agustín, cuenta con importantes vestigios arqueológicos de una antigua y misteriosa cultura milenaria, que por el nivel de los monolitos, se puede
+                  afirmar que alcanzó un gran grado de organización. Es un buen sitio de visita conocer e informarse con diferentes culturas.
+                </p>
+                <a href="#" target="_blank" class="btn btn-sm boton-categoria">Mas informacion</a>
               </div>
-              <div class="modal-body">Mensaje enviado correctamente</div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="card bg-light">
+              <div class="card-body">
+                <h2 class="text3-i">Cañon del chicamocha</h2>
+                <h4 class="text2-k2">Santander</h4>
+                <img class="img-fluid" src="../assets/categorias/Canon-chicamocha.jpg" alt="Canon-chicamocha" />
+                <p class="text2-k">
+                  El Parque Nacional Del Chicamocha (más conocido como PANACHI), es uno de los pocos parques naturales de Colombia dedicados al eco turismo, siendo uno de los sitios más importantes
+                  del turismo en nuestro país, en el parque pueden disfrutar de varios deportes.
+                </p>
+                <a href="#" target="_blank" class="btn btn-sm boton-categoria">Mas informacion</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="card bg-light">
+              <div class="card-body">
+                <h2 class="text3-i">Nevado del Ruiz</h2>
+                <h4 class="text2-k2">Caldas</h4>
+                <img class="img-fluid" src="../assets/categorias/nevado-ruiz.jpg" alt="nevado-ruiz" />
+                <p class="text2-k">
+                  Ubicado al suroriente de Manizales, el Nevado del Ruiz hace parte del Parque Nacional Natural de Los Nevados, que comprende los departamentos de Risaralda, Caldas, Quindío y Tolima.
+                </p>
+                <a href="#" target="_blank" class="btn btn-sm boton-categoria">Mas informacion</a>
               </div>
             </div>
           </div>
@@ -114,7 +122,5 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"></script>
-    <!-- SCRIPT -->
-    <script src="../scripts/contactenos.js"></script>
   </body>
 </html>

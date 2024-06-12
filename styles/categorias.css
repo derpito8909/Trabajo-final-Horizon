@@ -1,0 +1,53 @@
+/* importacion estilos generales */
+@import "./index.css";
+
+.seccion-categorias {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* boton de mas informacion de la pagina de categorias */
+.boton-categoria {
+  background-color: #d9ad2b;
+  border-radius: 5px;
+  color: var(--colorTextoContraste);
+  float: right;
+  font-weight: bold;
+}
+/* .item-color {
+  color: var(--colorTextoContraste);
+} */
+
+.row > h2 {
+  color: var(--colorTexto);
+  text-shadow: 1px 1px 6px black;
+  font-family: var(--textoTitulo);
+  font-size: 50px;
+}
+.text2-k {
+  font-family: var(--textoContenido);
+  font-size: 1em;
+  font-weight: 500;
+  color: var(--colorTextoContraste);
+}
+.text2-k2 {
+  font-family: var(--textoContenido);
+  font-size: 1em;
+  font-weight: lighter;
+  color: var(--colorTextoContraste);
+}
+
+.text3-i {
+  font-family: var(--textoContenido);
+  font-size: 1.3em;
+  font-weight: bold;
+  color: var(--colorTextoContraste);
+}
+
+/*  seccion para pagina responsive */
+@media screen and (max-width: 490px) {
+  .seccion-categorias {
+    display: flex;
+    flex-direction: column;
+  }
+}

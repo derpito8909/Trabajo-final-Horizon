@@ -1,13 +1,4 @@
-:root {
-  /* PALETA DE COLORES */
-  --colorTexto: #f0f3ff;
-  --colorContraste: #027368;
-  --colorFondo: #f2e0c9;
-
-  /* TIPOGRAFÍA */
-  --textoTitulo: "Poppins", sans-serif;
-  --textoContenido: "Montserrat", sans-serif;
-}
+@import "./index.css";
 /* boton */
 .boton {
   background-color: var(--colorContraste);

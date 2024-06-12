@@ -6,6 +6,7 @@
   --colorTexto: #f0f3ff;
   --colorContraste: #027368;
   --colorFondo: rgb(242, 224, 201);
+  --colorTextoContraste: #014040;
 
   /* TIPOGRAFÍA */
   --textoTitulo: "Poppins", sans-serif;
@@ -163,7 +164,7 @@ main {
 
 .card {
   width: 320px;
-  background-color: var(--colorContraste);
+  background-color: var(--colorTexto);
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 1px 1px 6px black;
