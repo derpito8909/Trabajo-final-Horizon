@@ -31,36 +31,40 @@ body {
 /* MAIN */
 main{
     width: 100%;
-    height: 80%;
+    height: 100%;
     display: grid;
     place-content: center;
 }
+
 
 /* FORMULARIO LOG IN */
 .login-container {
     width: 650px;
-    height: 550px;
     background-color: white;
-    padding: 10px;
+    padding: 20px;
     border: solid 5px var(--colorContraste);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin: 20px auto; 
 }
 
-.iniciar-sesion{
+.iniciar-sesion {
     width: 100%;
-    height: 120px;
+    height: auto;
     background-color: var(--colorContraste);
-
+    padding: 20px;
     display: grid;
     place-content: center;
+    box-sizing: border-box;
 }
 
 .iniciar-sesion h2 {
     font-family: var(--textoTitulo);
     font-weight: bold;
-    font-size: 50px;
+    font-size: 40px;
     color: var(--colorTexto);
+    text-align: center;
 }
 
 .form-group {
@@ -77,26 +81,28 @@ main{
     padding: 10px;
     border: 1px solid gray;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
 .form-group input[type="checkbox"] {
     width: auto;
 }
 
-.contenedor-btn{
+.contenedor-btn {
     width: 100%;
-
     display: grid;
     place-content: center;
 }
 
 .login-btn {
+    width: 100%; 
     padding: 10px;
     background-color: var(--colorContraste);
     color: var(--colorTexto);
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 .login-btn:hover {
@@ -121,7 +127,7 @@ main{
 /* FOOTER */
 footer {
     background-color: var(--colorContraste);
-    width: 100%;
+    width: 100vw;
     height: 180px;
     display: flex;
     flex-direction: column;
@@ -168,4 +174,34 @@ footer {
 footer p {
     color: var(--colorTexto);
     font-size: 20px;
+}
+
+/* Media Queries para Responsividad */
+
+/* Pantallas pequeñas */
+@media (max-width: 480px) {
+    .login-container {
+        width: 100vw;
+        padding: 10px;
+    }
+
+    .iniciar-sesion {
+        padding: 10px;
+    }
+
+    .iniciar-sesion h2 {
+        font-size: 25px;
+    }
+
+    .form-group input {
+        padding: 6px;
+    }
+
+    .login-btn {
+        padding: 6px;
+    }
+
+    .extra-links a {
+        margin: 0 5px;
+    }
 }

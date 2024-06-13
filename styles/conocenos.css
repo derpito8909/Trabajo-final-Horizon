@@ -33,49 +33,19 @@ header {
     width: 100%;
 }
 
-.menu-nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
+/* NAV BOOTSTRAP */
+.nav-link:hover{
+    text-shadow: 1px 1px 6px black;
 }
 
-.contenedor-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 120px;
-    font-weight: 500;
-}
-
-.menu-lista {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    list-style: none;
-    color: black;
-}
-
-.menu-lista a {
-    text-decoration: none;
-    color: black;
-}
-
-.menu-lista a:hover {
-    color: var(--colorTexto);
-}
-
-.span-contactenos a {
+.span-contactenos{
     color: var(--colorContraste);
 }
 
 .contenedor-log-in {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 }
 
 .contenedor-log-in i {
@@ -93,6 +63,7 @@ header {
 
 .contenedor-log-in a:hover {
     color: var(--colorTexto);
+    text-shadow: 1px 1px 6px black;
 }
 
 /* MAIN */
@@ -100,52 +71,52 @@ main {
     width: 100%;
 }
 
-.informacion{
+.informacion {
     width: 100%;
-
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap; 
 }
 
-.quienes-somos{
+.quienes-somos {
     display: flex;
-
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     text-align: center;
+    width: 45%; 
+    margin: 20px 0; 
 }
 
-.quienes-somos h2{
+.quienes-somos h2 {
     color: var(--colorTexto);
     font-weight: bold;
     font-size: 50px;
     font-family: var(--textoTitulo);
     text-shadow: 1px 1px 6px black;
-
     margin-bottom: 50px;
 }
 
-.quienes-somos p{
+.quienes-somos p {
     color: var(--colorContraste);
     font-size: 20px;
     font-family: var(--textoContenido);
 }
 
-.informacion img{
+.informacion img {
     width: 720px;
     height: 450px;
     margin: 80px;
+    max-width: 100%; 
+    height: auto; 
 }
 
-.viajemos-juntos{
+.viajemos-juntos {
     color: var(--colorTexto);
     font-weight: bold;
     font-size: 50px;
     text-shadow: 1px 1px 6px black;
     text-align: center;
-
     margin: 70px;
 }
 
@@ -199,4 +170,80 @@ footer {
 footer p {
     color: var(--colorTexto);
     font-size: 20px;
+}
+
+/* Media Queries para Responsividad */
+
+/* Pantallas medianas */
+@media (max-width: 1024px) {
+    .informacion {
+        justify-content: center; 
+    }
+
+    .quienes-somos {
+        width: 70%;
+    }
+
+    .quienes-somos h2 {
+        font-size: 40px;
+    }
+
+    .quienes-somos p {
+        font-size: 18px;
+    }
+
+    .informacion img {
+        width: 100%;
+        height: auto;
+        margin: 40px 0; 
+    }
+
+    .viajemos-juntos {
+        font-size: 40px;
+        margin: 50px 20px; 
+    }
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 768px) {
+    .quienes-somos {
+        width: 90%;
+    }
+
+    .quienes-somos h2 {
+        font-size: 35px;
+    }
+
+    .quienes-somos p {
+        font-size: 16px;
+    }
+
+    .viajemos-juntos {
+        font-size: 35px;
+        margin: 40px 10px; 
+    }
+}
+
+/* Pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .quienes-somos {
+        width: 100%;
+    }
+
+    .quienes-somos h2 {
+        font-size: 30px;
+    }
+
+    .quienes-somos p {
+        font-size: 14px;
+    }
+
+    .viajemos-juntos {
+        font-size: 30px;
+        margin: 30px 10px; 
+    }
+
+    .informacion img {
+        margin: 20px 0; 
+    }
 }

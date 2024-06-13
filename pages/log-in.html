@@ -39,7 +39,7 @@
             <div class="iniciar-sesion">
                 <h2>Iniciar Sesión</h2>
             </div>
-            <form action="/login" method="post">
+            <form id="login-form" action="/login" method="post" onsubmit="return validateForm()">
                 <div class="form-group">
                     <label for="username">Nombre de Usuario</label>
                     <input type="text" id="username" name="username" required>
@@ -65,21 +65,23 @@
     <!-- FOOTER -->
     <footer>
         <div class="contactenos">
-            <a href="#">
+            <a href="../pages/contactenos.html">
                 <h3>Contáctenos</h3>
             </a>
-            <a href="#">
+            <a href="../pages/conocenos.html">
                 <h3>Sobre Nosotros</h3>
             </a>
         </div>
         <ul class="redes-sociales">
-            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-            <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+            <li><a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="https://www.youtube.com/"><i class="bi bi-youtube"></i></a></li>
         </ul>
 
         <p>Desarrollado por &copy; Horizon</p>
     </footer>
+    <!-- SCRIPT -->
+     <script src=""></script>
 </body>
 
 </html>

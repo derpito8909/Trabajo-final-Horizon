@@ -5,7 +5,7 @@
     /* PALETA DE COLORES */
     --colorTexto: #F0F3FF;
     --colorContraste: #027368;
-    --colorFondo:  #F2E0C9;
+    --colorFondo: #F2E0C9;
 
     /* TIPOGRAFÍA */
     --textoTitulo: "Poppins", sans-serif;
@@ -21,14 +21,14 @@
 
 /* BODY */
 body {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     overflow-x: hidden;
     background-image: url(../assets/registro/carnaval-registro.jpeg);
     font-family: var(--textoContenido);
 }
 
-main{
+main {
     width: 100%;
     height: 80%;
     display: grid;
@@ -38,60 +38,66 @@ main{
 /* FORMULARIO */
 
 .container {
-    background-color: #fff;
-    padding: 10px;
-    border: solid 5px var(--colorContraste);
-    border-radius: 8px;
+    width: 400px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 650px;
-    height: 550px;
-    box-sizing: border-box;
 }
 
-.titulo-registro{
-    width: 100%;
+.titulo-registro {
     background-color: var(--colorContraste);
-
-    display: grid;
-    place-content: center;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .titulo-registro h2 {
-    font-family: var(--textoTitulo);
-    font-weight: bold;
-    font-size: 40px;
     color: var(--colorTexto);
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+}
 
 label {
-    display: block;
-    margin-bottom: 8px;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin-bottom: 15px;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 3px;
+    box-sizing: border-box;
 }
 
 input[type="submit"] {
     width: 100%;
     padding: 10px;
+    margin-top: 10px;
     background-color: var(--colorContraste);
+    color: white;
     border: none;
-    border-radius: 4px;
-    color: var(--colorTexto);
-    font-size: 16px;
+    border-radius: 3px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: var(--colorContraste);
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
 }
 
 /* FOOTER */
@@ -144,4 +150,25 @@ footer {
 footer p {
     color: var(--colorTexto);
     font-size: 20px;
+}
+
+/* Media Queries para Responsividad */
+
+/* Pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .titulo-registro h2 {
+        font-size: 25px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: calc(100% - 20px);
+    }
 }
