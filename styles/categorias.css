@@ -1,22 +1,39 @@
 /* importacion estilos generales */
 @import "./index.css";
 
-.seccion-categorias {
-  display: flex;
-  justify-content: space-around;
+body {
+  width: 100%;
+  height: 100vh;
 }
 
+.seccion-categorias {
+  display: flex;
+  justify-content: center;
+  margin-left: 70px;
+  margin-bottom: 35px;
+}
+
+.card-categorias {
+  height: 95%;
+  position: relative;
+  background-color: #f1eadf;
+}
+
+.card-categorias a {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  bottom: 7px;
+  right: 7px;
+}
 /* boton de mas informacion de la pagina de categorias */
 .boton-categoria {
   background-color: #d9ad2b;
   border-radius: 5px;
-  color: var(--colorTextoContraste);
+  color: #014040;
   float: right;
   font-weight: bold;
 }
-/* .item-color {
-  color: var(--colorTextoContraste);
-} */
 
 .row > h2 {
   color: var(--colorTexto);
@@ -28,26 +45,32 @@
   font-family: var(--textoContenido);
   font-size: 1em;
   font-weight: 500;
-  color: var(--colorTextoContraste);
+  color: #014040;
+  text-align: justify;
 }
 .text2-k2 {
   font-family: var(--textoContenido);
   font-size: 1em;
   font-weight: lighter;
-  color: var(--colorTextoContraste);
+  color: #014040;
 }
 
 .text3-i {
   font-family: var(--textoContenido);
   font-size: 1.3em;
   font-weight: bold;
-  color: var(--colorTextoContraste);
+  color: #014040;
 }
 
 /*  seccion para pagina responsive */
-@media screen and (max-width: 490px) {
+@media only screen and (max-width: 600px) {
   .seccion-categorias {
     display: flex;
     flex-direction: column;
+    align-items: end;
+  }
+  body {
+    width: 100%;
+    height: 100%;
   }
 }

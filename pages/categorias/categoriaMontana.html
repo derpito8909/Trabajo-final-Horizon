@@ -9,7 +9,7 @@
     <meta name="description" content="Agencia de viajes" />
 
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="../assets/logo/logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="../../assets/logo/logo.png" type="image/x-icon" />
 
     <!-- BOOTSTRAP ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
@@ -22,7 +22,7 @@
       crossorigin="anonymous" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../styles/categorias.css" />
+    <link rel="stylesheet" href="../../styles/categorias.css" />
 
     <title>Montañas</title>
   </head>
@@ -30,19 +30,31 @@
     <!--------------------------------- HEADER --------------------------------->
     <header>
       <!-- MenuNav -->
-      <nav class="menu-nav">
-        <img src="../assets/logo/logo.png" alt="Logo de Horizon" />
-        <div class="contenedor-menu">
-          <ul class="menu-lista">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./conocenos.html">Conócenos</a></li>
-            <li class="span-contactenos"><a href="./contactenos.html">Contáctenos</a></li>
-          </ul>
-          <div class="contenedor-log-in">
-            <a href="#">
-              <i class="bi bi-person-fill-check"></i>
-              <p>Usuario</p>
-            </a>
+      <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../../index.html"><img src="../../assets/logo/logo.png" alt="logo" /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse fw-semibold justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav gap-5">
+              <a class="nav-link active" aria-current="page" href="../../index.html">Inicio</a>
+              <a class="nav-link" href="../conocenos.html">Conócenos</a>
+              <a class="nav-link" href="../contactenos.html"><span class="span-contactenos">Contáctenos</span></a>
+              <div class="contenedor-log-in">
+                <a href="../log-in.html">
+                  <i class="bi bi-person-fill-check"></i>
+                  <p>Usuario</p>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
@@ -50,14 +62,14 @@
     <!--------------------------------- MAIN --------------------------------->
     <main>
       <section class="seccion-categorias">
-        <div class="row mx-5">
+        <div class="row">
           <h2>Montañas</h2>
           <div class="col-12 col-lg-4">
-            <div class="card item-color">
+            <div class="card card-categorias">
               <div class="card-body">
                 <h2 class="text3-i">Parque arqueologico San agustin</h2>
                 <h4 class="text2-k2">Huila</h4>
-                <img class="img-fluid" src="../assets/categorias/Parque-sanAgustin.jpg" alt="Parque-sanAgustin" />
+                <img class="img-fluid" src="../../assets/categorias/Parque-sanAgustin.jpg" alt="Parque-sanAgustin" />
                 <p class="text2-k">
                   El Parque Arqueológico de San Agustín, cuenta con importantes vestigios arqueológicos de una antigua y misteriosa cultura milenaria, que por el nivel de los monolitos, se puede
                   afirmar que alcanzó un gran grado de organización. Es un buen sitio de visita conocer e informarse con diferentes culturas.
@@ -67,11 +79,11 @@
             </div>
           </div>
           <div class="col-12 col-lg-4">
-            <div class="card bg-light">
+            <div class="card card-categorias">
               <div class="card-body">
                 <h2 class="text3-i">Cañon del chicamocha</h2>
                 <h4 class="text2-k2">Santander</h4>
-                <img class="img-fluid" src="../assets/categorias/Canon-chicamocha.jpg" alt="Canon-chicamocha" />
+                <img class="img-fluid" src="../../assets/categorias/Canon-chicamocha.jpg" alt="Canon-chicamocha" />
                 <p class="text2-k">
                   El Parque Nacional Del Chicamocha (más conocido como PANACHI), es uno de los pocos parques naturales de Colombia dedicados al eco turismo, siendo uno de los sitios más importantes
                   del turismo en nuestro país, en el parque pueden disfrutar de varios deportes.
@@ -81,11 +93,11 @@
             </div>
           </div>
           <div class="col-12 col-lg-4">
-            <div class="card bg-light">
+            <div class="card card-categorias">
               <div class="card-body">
                 <h2 class="text3-i">Nevado del Ruiz</h2>
                 <h4 class="text2-k2">Caldas</h4>
-                <img class="img-fluid" src="../assets/categorias/nevado-ruiz.jpg" alt="nevado-ruiz" />
+                <img class="img-fluid" src="../../assets/categorias/nevado-ruiz.jpg" alt="nevado-ruiz" />
                 <p class="text2-k">
                   Ubicado al suroriente de Manizales, el Nevado del Ruiz hace parte del Parque Nacional Natural de Los Nevados, que comprende los departamentos de Risaralda, Caldas, Quindío y Tolima.
                 </p>
@@ -99,8 +111,8 @@
     <!--------------------------------- FOOTER --------------------------------->
     <footer>
       <div class="contactenos">
-        <a href="./contactenos.html"><h3>Contáctenos</h3></a>
-        <a href="./conocenos.html"><h3>Sobre Nosotros</h3></a>
+        <a href="../contactenos.html"><h3>Contáctenos</h3></a>
+        <a href="../conocenos.html"><h3>Sobre Nosotros</h3></a>
       </div>
       <ul class="redes-sociales">
         <li>

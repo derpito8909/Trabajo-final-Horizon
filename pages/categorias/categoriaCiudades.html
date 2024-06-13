@@ -22,7 +22,7 @@
       crossorigin="anonymous" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../styles/categorias.css" />
+    <link rel="stylesheet" href="../../styles/categorias.css" />
 
     <title>Ciudades</title>
   </head>
@@ -30,19 +30,31 @@
     <!--------------------------------- HEADER --------------------------------->
     <header>
       <!-- MenuNav -->
-      <nav class="menu-nav">
-        <img src="../assets/logo/logo.png" alt="Logo de Horizon" />
-        <div class="contenedor-menu">
-          <ul class="menu-lista">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./conocenos.html">Conócenos</a></li>
-            <li class="span-contactenos"><a href="./contactenos.html">Contáctenos</a></li>
-          </ul>
-          <div class="contenedor-log-in">
-            <a href="#">
-              <i class="bi bi-person-fill-check"></i>
-              <p>Usuario</p>
-            </a>
+      <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../../index.html"><img src="../../assets/logo/logo.png" alt="logo" /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse fw-semibold justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav gap-5">
+              <a class="nav-link active" aria-current="page" href="../../index.html">Inicio</a>
+              <a class="nav-link" href="../conocenos.html">Conócenos</a>
+              <a class="nav-link" href="../contactenos.html"><span class="span-contactenos">Contáctenos</span></a>
+              <div class="contenedor-log-in">
+                <a href="../log-in.html">
+                  <i class="bi bi-person-fill-check"></i>
+                  <p>Usuario</p>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
@@ -50,25 +62,25 @@
     <!--------------------------------- MAIN --------------------------------->
     <main>
       <section class="seccion-categorias">
-        <div class="row mx-5">
+        <div class="row">
           <h2>Ciudades</h2>
           <div class="col-12 col-lg-4">
-            <div class="card item-color">
+            <div class="card card-categorias">
               <div class="card-body">
                 <h2 class="text3-i">Bogotá</h2>
                 <h4 class="text2-k2">Bogotá D.C</h4>
-                <img class="img-fluid" src="../assets/categorias/bogota.jpeg" alt="bogota" />
+                <img class="img-fluid" src="../../assets/categorias/bogota.jpeg" alt="bogota" />
                 <p class="text2-k">Bogotá es una ciudad que te sorprenderá por donde la mires. Déjate enamorar de la capital de Colombia, conócela y vívela. Bogotá espera por ti.</p>
                 <a href="#" target="_blank" class="btn btn-sm boton-categoria">Mas informacion</a>
               </div>
             </div>
           </div>
           <div class="col-12 col-lg-4">
-            <div class="card bg-light">
+            <div class="card card-categorias">
               <div class="card-body">
                 <h2 class="text3-i">Medellín</h2>
                 <h4 class="text2-k2">Antioquia</h4>
-                <img class="img-fluid" src="../assets/categorias/Medellin.jpeg" alt="Medellin" />
+                <img class="img-fluid" src="../../assets/categorias/Medellin.jpeg" alt="Medellin" />
                 <p class="text2-k">
                   Medellín es considerada la segunda ciudad más importante del país después de Bogotá, la capital y está ubicada en la Cordillera Central, uno de los tres ramales de la cadena
                   montañosa más importante de Latinoamérica, la Cordillera de los Andes, lo cual la hace una ciudad ubicada en una región rodeada de montañas y naturaleza.
@@ -78,11 +90,11 @@
             </div>
           </div>
           <div class="col-12 col-lg-4">
-            <div class="card bg-light">
+            <div class="card card-categorias">
               <div class="card-body">
                 <h2 class="text3-i">Cartagena</h2>
                 <h4 class="text2-k2">Bolivar</h4>
-                <img class="img-fluid" src="../assets/categorias/Cartagena.jpeg" alt="cartagena" />
+                <img class="img-fluid" src="../../assets/categorias/Cartagena.jpeg" alt="cartagena" />
                 <p class="text2-k">
                   Cartagena, considerada patrimonio histórico de la humanidad y elevada a la categoría de Distrito Turístico y Cultural, por su riqueza arquitectónica de estilo colonial en donde
                   sobresalen el castillo de San Felipe de Barajas, la parte amurallada de la ciudad, el fuerte de San Sebastián, el cerro de La Popa, el palacio de la Inquisición y otras

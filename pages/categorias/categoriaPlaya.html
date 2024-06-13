@@ -9,7 +9,7 @@
     <meta name="description" content="Agencia de viajes" />
 
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="../assets/logo/logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="../../assets/logo/logo.png" type="image/x-icon" />
 
     <!-- BOOTSTRAP ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
@@ -22,7 +22,7 @@
       crossorigin="anonymous" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../styles/categorias.css" />
+    <link rel="stylesheet" href="../../styles/categorias.css" />
 
     <title>Playas</title>
   </head>
@@ -30,19 +30,31 @@
     <!--------------------------------- HEADER --------------------------------->
     <header>
       <!-- MenuNav -->
-      <nav class="menu-nav">
-        <img src="../assets/logo/logo.png" alt="Logo de Horizon" />
-        <div class="contenedor-menu">
-          <ul class="menu-lista">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./conocenos.html">Conócenos</a></li>
-            <li class="span-contactenos"><a href="./contactenos.html">Contáctenos</a></li>
-          </ul>
-          <div class="contenedor-log-in">
-            <a href="#">
-              <i class="bi bi-person-fill-check"></i>
-              <p>Usuario</p>
-            </a>
+      <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../../index.html"><img src="../../assets/logo/logo.png" alt="logo" /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse fw-semibold justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav gap-5">
+              <a class="nav-link active" aria-current="page" href="../../index.html">Inicio</a>
+              <a class="nav-link" href="../conocenos.html">Conócenos</a>
+              <a class="nav-link" href="../contactenos.html"><span class="span-contactenos">Contáctenos</span></a>
+              <div class="contenedor-log-in">
+                <a href="../log-in.html">
+                  <i class="bi bi-person-fill-check"></i>
+                  <p>Usuario</p>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
@@ -50,14 +62,14 @@
     <!--------------------------------- MAIN --------------------------------->
     <main>
       <section class="seccion-categorias">
-        <div class="row mx-5">
+        <div class="row">
           <h2>Playas</h2>
           <div class="col-12 col-lg-4">
-            <div class="card item-color">
+            <div class="card card-categorias">
               <div class="card-body">
                 <h2 class="text3-i">Cabo de la vela</h2>
                 <h4 class="text2-k2">Guajira</h4>
-                <img class="img-fluid" src="../assets/destinos-frecuentes/cabo-de-la-vela.jpg" alt="Cabo de la vela" />
+                <img class="img-fluid" src="../../assets/categorias/Cabo-vela.jpeg" alt="Cabo de la vela" />
                 <p class="text2-k">
                   En este sitio podemos observar las varias y majestuosas playas, donde su belleza es la característica más importante. Un lugar muy importante dentro de este sitio turístico, es el
                   Faro y el cerro Pilón de Azúcar, estos lugares que para la tribu Wayúu, tiene alto valor significativo mitológico y sentimental, ya que en sus creencias, en este sitio pasan sus
@@ -68,11 +80,11 @@
             </div>
           </div>
           <div class="col-12 col-lg-4">
-            <div class="card bg-light">
+            <div class="card card-categorias">
               <div class="card-body">
                 <h2 class="text3-i">Isla de Baru</h2>
                 <h4 class="text2-k2">Bolivar</h4>
-                <img class="img-fluid" src="../assets/categorias/Isla-Barú.jpg" alt="Isla baru" />
+                <img class="img-fluid" src="../../assets/categorias/Isla-Barú.jpg" alt="Isla baru" />
                 <p class="text2-k">
                   En esta isla hay varios hoteles que ofrecen una cómoda estadía, debido a que hay una alta demanda turística. Nadie se querría perder sus playas blancas y agua cristalina, un paisaje
                   realmente deslumbrante. En sus playas se pueden gozar de diferentes deportes náuticos no motorizados como lo son los kayaks, windsurf y snorkel.
@@ -82,11 +94,11 @@
             </div>
           </div>
           <div class="col-12 col-lg-4">
-            <div class="card bg-light">
+            <div class="card card-categorias">
               <div class="card-body">
                 <h2 class="text3-i">Tolu</h2>
                 <h4 class="text2-k2">sucre</h4>
-                <img class="img-fluid" src="../assets/categorias/Tolu.jpg" alt="Tolu" />
+                <img class="card-img-top" src="../../assets/categorias/Tolu.jpg" alt="Tolu" />
                 <p class="text2-k">
                   A tan solo 30 minutos de la capital del departamento de Sucre, se puede disfrutar de este municipio, el cual es una cantidad y variedad de piscinas naturales de agua marina, en la
                   cual podrá descansar, caracterizada por ser aguas tranquilas, con pocas corrientes, y playas no muy profundas.
@@ -101,8 +113,8 @@
     <!--------------------------------- FOOTER --------------------------------->
     <footer>
       <div class="contactenos">
-        <a href="./contactenos.html"><h3>Contáctenos</h3></a>
-        <a href="./conocenos.html"><h3>Sobre Nosotros</h3></a>
+        <a href="../contactenos.html"><h3>Contáctenos</h3></a>
+        <a href="../conocenos.html"><h3>Sobre Nosotros</h3></a>
       </div>
       <ul class="redes-sociales">
         <li>
