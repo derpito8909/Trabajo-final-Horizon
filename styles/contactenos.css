@@ -1,0 +1,40 @@
+@import "./index.css";
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+/* boton */
+.boton {
+  background-color: var(--colorContraste);
+  border-radius: 5px;
+  color: var(--colorTexto);
+  width: 100px;
+}
+.contact {
+  width: 50%;
+  margin: 100px auto;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: var(--textoContenido);
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact {
+    width: 100%;
+    margin: 10px 10px;
+    font-size: 1.2rem;
+  }
+  .contact p {
+    text-align: justify;
+  }
+  body {
+    width: 100%;
+    height: 100%;
+  }
+}
