@@ -36,13 +36,10 @@
     <img src="https://i.ibb.co/0c1rsDN/mensaje-ok.png" alt="mensaje-ok" border="0" height = "100px" width= "200px" >
 <div id='video-proyecto' />
 <h3>Video presentación del proyecto</h3>
-<video width="320" height="240" controls>
-  <source src="assets/presentacion/VideoPagina.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+  <a href="assets/presentacion/VideoPagina.mp4" target="_blank">video</a>
   <div id='diapositivas-proyecto' />
 <h3>Diapositivas del proyecto</h3>
-    [Diapositivas Proyecto Horizon](/assets/presentacion/ProyectofinalHorizon.pptx)
+    <a href="/assets/presentacion/ProyectofinalHorizon.pptx" target="_blank">diapositivas</a>
 <!-- Subtítulo de Autor -->
 <h2 align="center">Autores</h2>
 <p>Proyecto fue realizado por: <br/>
