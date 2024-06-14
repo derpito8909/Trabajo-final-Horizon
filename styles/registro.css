@@ -1,174 +1,194 @@
 /* IMPORTACIONES */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-    /* PALETA DE COLORES */
-    --colorTexto: #F0F3FF;
-    --colorContraste: #027368;
-    --colorFondo: #F2E0C9;
+  /* PALETA DE COLORES */
+  --colorTexto: #f0f3ff;
+  --colorContraste: #027368;
+  --colorFondo: #f2e0c9;
 
-    /* TIPOGRAFÍA */
-    --textoTitulo: "Poppins", sans-serif;
-    --textoContenido: "Montserrat", sans-serif;
+  /* TIPOGRAFÍA */
+  --textoTitulo: "Poppins", sans-serif;
+  --textoContenido: "Montserrat", sans-serif;
 }
 
 /* REDEFINICIÓN PARÁMETROS PÁGINA */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* BODY */
 body {
-    width: 100vw;
-    height: 100%;
-    overflow-x: hidden;
-    background-image: url(../assets/registro/carnaval-registro.jpeg);
-    font-family: var(--textoContenido);
+  width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
+  background-image: url(../assets/registro/carnaval-registro.jpeg);
+  font-family: var(--textoContenido);
 }
 
 main {
-    width: 100%;
-    height: 80%;
-    display: grid;
-    place-content: center;
+  width: 100%;
+  height: 80%;
+  display: grid;
+  place-content: center;
 }
 
 /* FORMULARIO */
 
 .container {
-    width: 400px;
-    margin: 10px auto;
-    padding: 20px;
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  margin: 10px auto;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .titulo-registro {
-    background-color: var(--colorContraste);
-    text-align: center;
-    margin-bottom: 20px;
+  background-color: var(--colorContraste);
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .titulo-registro h2 {
-    color: var(--colorTexto);
+  color: var(--colorTexto);
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 label {
-    font-weight: bold;
-    margin-bottom: 5px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
 }
 
 input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    background-color: var(--colorContraste);
-    color: white;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: var(--colorContraste);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 input[type="submit"]:hover {
-    background-color: var(--colorContraste);
+  background-color: var(--colorContraste);
 }
 
 .error-message {
-    color: red;
-    font-size: 0.8em;
-    margin-top: 5px;
+  color: red;
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+.contenedor-btn {
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--colorContraste);
+  color: var(--colorTexto);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.login-btn:hover {
+  background-color: #0056b3;
 }
 
 /* FOOTER */
 footer {
-    background-color: var(--colorContraste);
-    width: 100%;
-    height: 180px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-color: var(--colorContraste);
+  width: 100%;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contactenos {
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    border-bottom: solid 1px #F0F3FF;
-    font-weight: lighter;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  border-bottom: solid 1px #f0f3ff;
+  font-weight: lighter;
 }
 
 .contactenos a {
-    text-decoration: none;
-    color: var(--colorTexto);
+  text-decoration: none;
+  color: var(--colorTexto);
 }
 
 .contactenos a:hover {
-    text-shadow: 1px 1px 6px black;
+  text-shadow: 1px 1px 6px black;
 }
 
 .redes-sociales {
-    display: flex;
-    margin-top: 8px;
-    gap: 20px;
-    list-style: none;
-    font-size: 35px;
+  display: flex;
+  margin-top: 8px;
+  gap: 20px;
+  list-style: none;
+  font-size: 35px;
 }
 
 .redes-sociales a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .redes-sociales a:hover {
-    color: var(--colorTexto);
+  color: var(--colorTexto);
 }
 
 footer p {
-    color: var(--colorTexto);
-    font-size: 20px;
+  color: var(--colorTexto);
+  font-size: 20px;
 }
 
 /* Media Queries para Responsividad */
 
 /* Pantallas muy pequeñas */
 @media (max-width: 480px) {
-    .container {
-        width: 100%;
-        height: auto;
-        padding: 15px;
-    }
+  .container {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
 
-    .titulo-registro h2 {
-        font-size: 25px;
-    }
+  .titulo-registro h2 {
+    font-size: 25px;
+  }
 
-    input[type="text"],
-    input[type="email"],
-    input[type="password"] {
-        width: calc(100% - 20px);
-    }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: calc(100% - 20px);
+  }
 }

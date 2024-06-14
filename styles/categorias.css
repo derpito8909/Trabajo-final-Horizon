@@ -1,9 +1,11 @@
-/* importacion estilos generales */
+/* Importación de estilos generales */
 @import "./index.css";
 
 body {
   width: 100%;
   height: 100vh;
+  margin: 0; /* Agregado para eliminar el margen predeterminado */
+  padding: 0; /* Agregado para eliminar el relleno predeterminado */
 }
 
 .seccion-categorias {
@@ -26,12 +28,12 @@ body {
   bottom: 7px;
   right: 7px;
 }
-/* boton de mas informacion de la pagina de categorias */
+
+/* Botón "Más Información" de la página de categorías */
 .boton-categoria {
   background-color: #d9ad2b;
   border-radius: 5px;
   color: #014040;
-  float: right;
   font-weight: bold;
 }
 
@@ -41,6 +43,7 @@ body {
   font-family: var(--textoTitulo);
   font-size: 50px;
 }
+
 .text2-k {
   font-family: var(--textoContenido);
   font-size: 1em;
@@ -48,6 +51,7 @@ body {
   color: #014040;
   text-align: justify;
 }
+
 .text2-k2 {
   font-family: var(--textoContenido);
   font-size: 1em;
@@ -62,27 +66,23 @@ body {
   color: #014040;
 }
 
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-  .seccion-categorias {
-    display: flex;
+/* Media Queries para diferentes tamaños de pantalla */
+
+/* Pantallas medianas (601px - 1100px) */
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  .row-categoria {
     flex-direction: column;
-    align-items: end;
-  }
-  body {
-    width: 100%;
-    height: auto;
-    background-color: red;
   }
 }
-/*  seccion para pagina responsive */
+
+/* Pantallas pequeñas (< 600px) */
 @media screen and (max-width: 600px) {
   .seccion-categorias {
     display: flex;
     flex-direction: column;
     align-items: end;
-  }
-  body {
-    width: 100%;
-    height: 100%;
+    margin-left: 0; /* Eliminar el margen izquierdo en pantallas pequeñas */
+    margin-bottom: 20px; /* Reducir el margen inferior en pantallas pequeñas */
   }
 }
