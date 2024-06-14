@@ -26,6 +26,8 @@
   <img src="https://i.ibb.co/prhs1J9/mensaje-reserva.png" alt="mensaje-reserva" border="0" height = "100px" width= "200px">
    <h4>Página inicio Sesión</h4>
   <img src="https://i.ibb.co/LvLFqz5/Login.png" alt="Login" border="0" height = "300px" width= "300px" >
+  <h4>Página registro</h4>
+  <img src="https://i.ibb.co/r51JjWM/Registro.png" alt="registro" border="0" height = "300px" width= "300px" >
   <h4>Página conocenos</h4>
   <img src="https://i.ibb.co/tZmdNJS/Conocenos.png" alt="Conocenos" border="0" height = "300px" width= "300px">
   <h4>Página contactenos</h4>
