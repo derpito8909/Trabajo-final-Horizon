@@ -181,7 +181,7 @@ footer p {
 /* Pantallas pequeñas */
 @media (max-width: 480px) {
     .login-container {
-        width: 100vw;
+        width: 80vw;
         padding: 10px;
     }
 
