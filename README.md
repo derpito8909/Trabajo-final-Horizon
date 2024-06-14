@@ -21,7 +21,7 @@
   <h4>Página categorias</h4>
   <img src="https://i.ibb.co/88H3npv/categorias.png" alt="categorias" border="0" height = "300px" width= "300px">
   <h4>Página destino</h4>
-  <img src="https://i.ibb.co/F68NXGC/Destino.png" alt="Destino" border="0" height = "300px" width= "300px">
+  <img src="https://i.ibb.co/4p1DVHG/Destino.png" alt="Destino" border="0" height = "300px" width= "300px">
   <h4>notificación al hacer una reserva de un destino</h4>
   <img src="https://i.ibb.co/prhs1J9/mensaje-reserva.png" alt="mensaje-reserva" border="0" height = "100px" width= "200px">
    <h4>Página inicio Sesión</h4>
