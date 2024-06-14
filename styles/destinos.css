@@ -1,0 +1,347 @@
+/* IMPORTACIONES */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* PALETA DE COLORES */
+    --colorTexto: #F0F3FF;
+    --colorContraste: #027368;
+    --colorFondo: #F2E0C9;
+
+    /* TIPOGRAFÍA */
+    --textoTitulo: "Poppins", sans-serif;
+    --textoContenido: "Montserrat", sans-serif;
+}
+
+/* REDEFINICIÓN PARÁMETROS PÁGINA */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: var(--colorFondo);
+    font-family: var(--textoContenido);
+}
+
+/* HEADER */
+header {
+    width: 100%;
+}
+
+/* NAV BOOTSTRAP */
+.nav-link:hover {
+    text-shadow: 1px 1px 6px black;
+}
+
+.span-contactenos {
+    color: var(--colorContraste);
+}
+
+.contenedor-log-in {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contenedor-log-in i {
+    font-size: 30px;
+}
+
+.contenedor-log-in p {
+    font-size: 15px;
+}
+
+.contenedor-log-in a {
+    text-decoration: none;
+    color: black;
+}
+
+.contenedor-log-in a:hover {
+    color: var(--colorTexto);
+    text-shadow: 1px 1px 6px black;
+}
+
+/* MAIN */
+main {
+    width: 90%;
+    height: 100%;
+    display: flex;
+}
+
+.container-destino {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-destino h2 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: var(--textoTitulo);
+    color: var(--colorTexto);
+    text-shadow: 1px 1px 6px black;
+}
+
+.descripcion {
+    width: 80%;
+    height: 40%;
+    border-radius: 10px;
+    background-color: var(--colorTexto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.descripcion img {
+    height: 100%;
+    border-radius: 10px;
+    border: solid 6px var(--colorContraste);
+}
+
+.descripcion-texto {
+    width: 60%;
+    text-align: center;
+}
+
+.desc-sitio {
+    color: var(--colorContraste);
+    font-size: 18px;
+}
+
+.desc-viaje {
+    margin-top: 40px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* FORMULARIO AGENDAMIENTO DE VIAJES */
+.container-agendamiento {
+    width: 20%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: var(--colorContraste);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--colorTexto);
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: grid;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--colorTexto);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #D9AD2B;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #bf961a;
+}
+
+#total-price {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--colorContraste);
+    width: 100%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactenos {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    border-bottom: solid 1px white;
+    font-weight: lighter;
+}
+
+.contactenos a {
+    text-decoration: none;
+    color: var(--colorTexto);
+}
+
+.contactenos a:hover {
+    text-shadow: 1px 1px 6px black;
+}
+
+.redes-sociales {
+    display: flex;
+    margin-top: 8px;
+    gap: 20px;
+    list-style: none;
+    font-size: 35px;
+}
+
+.redes-sociales a {
+    text-decoration: none;
+    color: black;
+}
+
+.redes-sociales a:hover {
+    color: var(--colorTexto);
+}
+
+footer p {
+    color: var(--colorTexto);
+    font-size: 20px;
+}
+
+/* MEDIA QUERIES */
+
+/* Media query pantallas medianas */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-destino {
+        width: 100%;
+    }
+
+    .container-destino h2{
+        font-size: 40px;
+        margin: 30px;
+    }
+
+    .descripcion {
+        width: 80%;
+        height: auto;
+    }
+
+    .descripcion img{
+        width: 40%;
+    }
+
+    .descripcion-texto {
+        width: 60%;
+        height: 100%;
+    }
+
+    .desc-sitio {
+        font-size: 16px;
+    }
+
+    .desc-viaje {
+        font-size: 13px;
+    }
+
+    .container-agendamiento {
+        width: 60%;
+    }
+
+    footer p {
+        font-size: 18px;
+    }
+}
+
+/* Media query pantallas pequeñas */
+@media only screen and (max-width: 390px) {
+
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-destino h2 {
+        margin: 30px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .descripcion {
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .descripcion img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .descripcion-texto {
+        margin-top: 15px;
+        width: 90%;
+    }
+
+    .desc-sitio {
+        font-size: 14px;
+    }
+
+    .desc-viaje {
+        font-size: 12px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 18px;
+    }
+
+    .container-agendamiento {
+        width: 80%;
+    }
+
+    footer p {
+        font-size: 18px;
+    }
+}
