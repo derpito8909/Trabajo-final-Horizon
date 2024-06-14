@@ -1,12 +1,12 @@
 // FROMULARIO AGENDAMIENTO
-const form = document.getElementById('travel-form');
-const peopleInput = document.getElementById('people');
-const totalPriceSpan = document.getElementById('total-price');
-const pricePerPerson = 100; // Precio por persona
+let form = document.getElementById('travel-form');
+let peopleInput = document.getElementById('people');
+let totalPriceSpan = document.getElementById('total-price');
+let pricePerPerson = 107420; // Precio por persona
 
 function updateTotalPrice() {
-    const peopleCount = parseInt(peopleInput.value);
-    const totalPrice = peopleCount * pricePerPerson;
+    let peopleCount = parseInt(peopleInput.value);
+    let totalPrice = peopleCount * pricePerPerson;
     totalPriceSpan.textContent = `Precio Total: $${totalPrice}`;
 }
 
@@ -16,5 +16,4 @@ form.addEventListener('submit', (e) => {
     alert('Viaje agendado con éxito!');
 });
 
-// Initialize the total price display
 updateTotalPrice();
