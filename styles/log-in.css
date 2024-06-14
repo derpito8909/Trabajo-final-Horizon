@@ -181,28 +181,28 @@ footer p {
 
 /* Pantallas pequeñas */
 @media (max-width: 480px) {
-    .login-container {
-        width: 100vw;
-        padding: 10px;
-    }
+  .login-container {
+      width: 80vw;
+      padding: 10px;
+  }
 
   .iniciar-sesion {
-    padding: 10px;
+      padding: 10px;
   }
 
   .iniciar-sesion h2 {
-    font-size: 25px;
+      font-size: 25px;
   }
 
   .form-group input {
-    padding: 6px;
+      padding: 6px;
   }
 
   .login-btn {
-    padding: 6px;
+      padding: 6px;
   }
 
   .extra-links a {
-    margin: 0 5px;
+      margin: 0 5px;
   }
 }
