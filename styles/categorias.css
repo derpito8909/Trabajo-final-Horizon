@@ -62,8 +62,20 @@ body {
   color: #014040;
 }
 
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .seccion-categorias {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  body {
+    width: 100%;
+    height: auto;
+    background-color: red;
+  }
+}
 /*  seccion para pagina responsive */
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .seccion-categorias {
     display: flex;
     flex-direction: column;
