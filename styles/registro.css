@@ -21,11 +21,12 @@
 
 /* BODY */
 body {
-  width: 100vw;
-  height: 100%;
-  overflow-x: hidden;
-  background-image: url(../assets/registro/carnaval-registro.jpeg);
-  font-family: var(--textoContenido);
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+    background-image: url(../assets/registro/carnaval-registro.jpeg);
+    background-size: 120% 120%;
+    font-family: var(--textoContenido);
 }
 
 main {

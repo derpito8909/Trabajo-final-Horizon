@@ -326,13 +326,13 @@ footer p {
       font-size: 15px;
   }
 
-  .contenedor-banner img {
-      width: 70%;
-      height: 70%;
-  }
+    .contenedor-banner img {
+        width: 70%;
+        height: 70%;
+    }
 
-  .btn-busqueda{
-      width: 370px;
-      height: 85px;
-  }
+    .btn-busqueda{
+        width: 370px;
+        height: 85px;
+    }
 }
