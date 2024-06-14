@@ -1,39 +1,60 @@
 @import "./index.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-body {
-  width: 100%;
-  height: 100vh;
+:root {
+  /* PALETA DE COLORES */
+  --colorTexto: #f0f3ff;
+  --colorContraste: #027368;
+  --colorFondo: #f2e0c9;
+
+  /* TIPOGRAFÍA */
+  --textoTitulo: "Poppins", sans-serif;
+  --textoContenido: "Montserrat", sans-serif;
 }
-/* boton */
-.boton {
-  background-color: var(--colorContraste);
-  border-radius: 5px;
-  color: var(--colorTexto);
-  width: 100px;
-}
+
 .contact {
-  width: 50%;
+  width: 80%;
   margin: 100px auto;
   font-size: 2rem;
   font-weight: 500;
   font-family: var(--textoContenido);
 }
 
-.contact h2 {
-  font-size: 2.5rem;
-  text-transform: capitalize;
+.texto{
+  color: var(--colorTexto);
+  font-family: var(--textoTitulo);
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 1px 1px 6px black;
+}
+
+.mensaje{
+  color: var(--colorContraste);
+  font-size: 35px;
+  text-align:center;
+}
+
+.formulario{
+  margin-top: 50px;
+}
+
+/* boton */
+.boton {
+  background-color: var(--colorContraste);
+  border-radius: 5px;
+  color: var(--colorTexto);
+  width: 120px;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1366px) {
-  .main {
-    max-width: 80%;
-    height: 100vh;
+  .texto{
+    margin-bottom: 20px;
   }
+
   .contact {
-    width: 80%;
-    margin: 10px 10px;
+    width: 85%;
+    height: 100%;
     font-size: 2.2rem;
-    margin: 500px auto;
   }
 }
 
@@ -43,11 +64,13 @@ body {
     margin: 10px 10px;
     font-size: 1.2rem;
   }
-  .contact p {
-    text-align: justify;
+
+  .texto{
+    font-size: 38px;
   }
-  body {
-    width: 100%;
-    height: 100%;
+
+  .mensaje {
+    font-size: 18px;
+    text-align: center;
   }
 }
