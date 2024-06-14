@@ -36,14 +36,10 @@
     <img src="https://i.ibb.co/0c1rsDN/mensaje-ok.png" alt="mensaje-ok" border="0" height = "100px" width= "200px" >
 <div id='video-proyecto' />
 <h3>Video presentación del proyecto</h3>
-<p>video donde se realizo el recorrido el sitio web desde la prespectiva del usuario</p>
+[![video](https://img.youtube.com/vi/cCdKo_e_AJs/0.jpg)](https://www.youtube.com/watch?v=cCdKo_e_AJs)
   <div id='diapositivas-proyecto' />
 <h3>Diapositivas del proyecto</h3>
-    <p>Diapositivas donde esta la información relacionada con el proyecto: nombre del
-proyecto, nombre de los integrantes del equipo
-(quiénes), definir el problema que pretenden solucionar
-(el porqué), cuál es la propuesta para solucionar el
-problema planteado (el cómo).</p>
+    [Diapositivas Proyecto Horizon](/assets/presentacion/ProyectofinalHorizon.pptx)
 <!-- Subtítulo de Autor -->
 <h2 align="center">Autores</h2>
 <p>Proyecto fue realizado por: <br/>
