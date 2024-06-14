@@ -70,30 +70,38 @@
                 </div>
             </div>
         </div>
+
         <div class="container-agendamiento">
-            <h1>Reserva Ahora</h1>
-            <form id="travel-form" action="#" method="post">
+            <h1>Agendamiento de Viajes</h1>
+            <form id="travel-form" action="#" method="post" onsubmit="handleSubmit(event)">
+                <!-- Campo para el nombre completo -->
                 <div class="form-group">
                     <label for="name">Nombre Completo:</label>
                     <input type="text" id="name" name="name" required>
                 </div>
+                <!-- Campo para el correo electrónico -->
                 <div class="form-group">
                     <label for="email">Correo Electrónico:</label>
                     <input type="email" id="email" name="email" required>
                 </div>
+                <!-- Campo para la fecha de salida -->
                 <div class="form-group">
                     <label for="departure">Fecha de Salida:</label>
                     <input type="date" id="departure" name="departure" required>
                 </div>
+                <!-- Campo para la fecha de regreso -->
                 <div class="form-group">
                     <label for="return">Fecha de Regreso:</label>
                     <input type="date" id="return" name="return" required>
                 </div>
+                <!-- Campo para la cantidad de personas -->
                 <div class="form-group">
                     <label for="people">Cantidad de Personas:</label>
                     <input type="number" id="people" name="people" min="1" value="1" required>
                 </div>
+                <!-- Botón para enviar el formulario -->
                 <button type="submit">Agendar Viaje</button>
+                <!-- Span para mostrar el precio total del viaje -->
                 <span id="total-price"></span>
             </form>
         </div>
@@ -101,10 +109,10 @@
 
     <footer>
         <div class="contactenos">
-            <a href="../pages/contactenos.html">
+            <a href="../../pages/contactenos.html">
                 <h3>Contáctenos</h3>
             </a>
-            <a href="../pages/conocenos.html">
+            <a href="../../pages/conocenos.html">
                 <h3>Sobre Nosotros</h3>
             </a>
         </div>
