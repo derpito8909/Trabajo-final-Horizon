@@ -31,4 +31,4 @@ problema planteado (el cómo).</p>
 <p>Proyecto fue realizado por: <br/>
 David Rodriguez -><br/>
 Robinson Ariza - ><br/>
-  © 2023.</p>
+  © 2023.</p>.
