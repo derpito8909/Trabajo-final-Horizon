@@ -36,7 +36,10 @@
     <img src="https://i.ibb.co/0c1rsDN/mensaje-ok.png" alt="mensaje-ok" border="0" height = "100px" width= "200px" >
 <div id='video-proyecto' />
 <h3>Video presentación del proyecto</h3>
-[![video](https://img.youtube.com/vi/cCdKo_e_AJs/0.jpg)](https://www.youtube.com/watch?v=cCdKo_e_AJs)
+<video width="320" height="240" controls>
+  <source src="assets/presentacion/VideoPagina.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
   <div id='diapositivas-proyecto' />
 <h3>Diapositivas del proyecto</h3>
     [Diapositivas Proyecto Horizon](/assets/presentacion/ProyectofinalHorizon.pptx)
