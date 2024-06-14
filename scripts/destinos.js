@@ -16,5 +16,4 @@ form.addEventListener('submit', (e) => {
     alert('Viaje agendado con éxito!');
 });
 
-// Initialize the total price display
 updateTotalPrice();
